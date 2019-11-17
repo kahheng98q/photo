@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -41,6 +41,23 @@
             android:text="Line 2"
             android:textColor="@android:color/black"
             android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="57dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="192dp"
+            android:layout_marginLeft="192dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:src="@drawable/ic_addfriend" />
+
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

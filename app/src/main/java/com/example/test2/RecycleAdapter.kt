@@ -27,7 +27,7 @@ class RecycleAdapter(private val userList: ArrayList<Friend>)  :
     }
 
     // Replace the contents of a view (invoked by the layout manager)
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecycleAdapter.ViewHolder, position: Int) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
 //        holder.textView.text = myDataset[position]

@@ -20,14 +20,17 @@ class MainActivity : AppCompatActivity() {
 //        linearLayoutManager = LinearLayoutManager(this)
 //        recyclerView.layoutManager = linearLayoutManager
         val friend = ArrayList<Friend>()
-
+        friend.add(Friend(R.drawable.ic_cheah,"Kah Heng","RSD"))
+        friend.add(Friend(R.drawable.chia,"Jaren Yeap","DIA"))
+        friend.add(Friend(R.drawable.joseph,"Joseph Yeak","DIT"))
+        friend.add(Friend(R.drawable.yeap,"Chia Yang Jie","DIB"))
         viewManager = LinearLayoutManager(this)
         viewAdapter = RecycleAdapter(friend)
 
         recyclerView = findViewById<RecyclerView>(R.id.rv_friend_list).apply {
             // use this setting to improve performance if you know that changes
             // in content do not change the layout size of the RecyclerView
-            setHasFixedSize(true)
+          //  setHasFixedSize(true)
 
             // use a linear layout manager
             layoutManager = viewManager
